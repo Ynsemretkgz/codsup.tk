@@ -1,0 +1,397 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdn.plyr.io/3.6.3/plyr.js"></script>
+    <script src="https://cdn.usefathom.com/script.js"></script>
+    <script src="https://tailwindui.com/js/app.js?id=d4197598bcc6f27e1a60"></script>
+    <script src="https://tailwindui.com/js/prism.js?id=15deb4e2ec03d399dcb3"></script>
+    <script
+        src="https://cdn.jsdelivr.net/combine/npm/highlightjs@9.16.2/highlight.pack.min.js,npm/axios@0.19.2/dist/axios.min.js,npm/dlv@1.1.3/dist/dlv.umd.min.js,gh/alpinejs/alpine@v2.2.1/dist/alpine.js,npm/fuse.js@5.0.9-beta/dist/fuse.min.js"></script>
+
+
+
+    <link rel="stylesheet" href="path/to/plyr.css" />
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.6.3/plyr.css" />
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    <title>CodsUP</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="theme-color" content="#14bae4">
+    <meta content="assets/profile.jpg" property="og:image" />
+  	<link rel="shortcut icon" href="https://cdn.discordapp.com/icons/778252643758899210/3624b22d44662b486b8ac8fb71a2c732.webp?size=128">
+    <link rel="icon" type="image/x-icon" href="https://cdn.discordapp.com/icons/778252643758899210/3624b22d44662b486b8ac8fb71a2c732.webp?size=128">
+    <meta property="og:image" content="https://cdn.discordapp.com/icons/778252643758899210/3624b22d44662b486b8ac8fb71a2c732.webp?size=128">
+    <meta content="CodsUP" property="og:title" />
+    <meta content="CodsUP Resmi Paylaşım Sayfası" property="og:description" />
+    <meta content="CodsUP" name="description " />
+    <meta name="revisit-after" content="2 days">
+    <meta name="keywords"
+        content="CodsUP">
+    <meta property="og:locale" content="tr_TR" />
+    <link rel="canonical" href="https://www.codsup.tk/" />
+    <meta property="og:url" content="https://www.codsup.tk/" />
+    <meta property="og:site_name" content="CodsUP" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@CodsUP" />
+    <meta name="yandex-verification" content="76a6eb470f85fb3c" />
+    <style>
+        body {
+            background-color: #171a29 !important;
+        }
+
+        .space {
+            height: 100px;
+        }
+
+        .space2 {
+            height: 10px;
+        }
+
+        @media (max-width: 1100px) {
+
+            .pc {
+                display: none;
+            }
+        }
+
+        @media (min-width: 1100px) {
+            .mobile {
+                display: none;
+
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav x-data="{ open: false }" class="bg-gray-800">
+        <div class="max-w-7xl px-2 sm:px-6 lg:px-8">
+            <div class="relative flex items-center justify-between h-16">
+                <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+                    <!-- Mobile menu button-->
+                    <button @click="open = !open"
+                        class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+                        x-bind:aria-expanded="open">
+                        <span class="sr-only">Ana Menüyü Aç</span>
+                        <!-- Icon when menu is closed. -->
+                        <svg x-state:on="Menu open" x-state:off="Menu closed"
+                            :class="{ 'hidden': open, 'block': !open }" class="h-6 w-6 block"
+                            x-description="Heroicon name: menu" xmlns="http://www.w3.org/2000/svg" fill="none"
+                            viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                        <!-- Icon when menu is open. -->
+                        <svg x-state:on="Menu open" x-state:off="Menu closed"
+                            :class="{ 'hidden': !open, 'block': open }" class="h-6 w-6 hidden"
+                            x-description="Heroicon name: x" xmlns="http://www.w3.org/2000/svg" fill="none"
+                            viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M6 18L18 6M6 6l12 12"></path>
+                        </svg>
+                    </button>
+                </div>
+                <div class="flex-1 flex items-center  sm:items-stretch sm:justify-start">
+                    <div class="hidden sm:block ">
+                        <div class="flex space-x-4">
+                            <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+                            <a href="/"
+                                class="bg-gray-900 text-white px-3 py-2 rounded-md text-sm font-medium">CodsUP</a>
+                            <a href="https://www.codsup.tk/uptime"
+                                class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Uptime Servisi</a>
+                            <a href="https://www.codsup.tk/kisalt"
+                                class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Link Kısalt</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div x-description="Mobile menu, toggle classes based on menu state." x-state:on="Menu open"
+            x-state:off="Menu closed" :class="{ 'block': open, 'hidden': !open }" class="sm:hidden hidden">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+                <a href="/"
+                    class="bg-gray-900 text-white block px-3 py-2 rounded-md text-base font-medium">CodsUP</a>
+                <a href="https://www.codsup.tk/uptime"
+                    class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Uptime Sistemi</a>
+                <a href="https://www.codsup.tk/kisalt"
+                    class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Link Kısalt</a>
+            </div>
+        </div>
+    </nav>
+    <div class="container mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+        <div class="space2"></div>
+
+
+        <div class="grid grid-cols-3 gap-1 grid-flow-row pc">
+            <div
+                class="row-span-1 py-8 px-8 max-w-sm bg-gray-800 rounded-xl shadow-md space-y-2 sm:py-4 sm:flex sm:items-center sm:space-y-0 sm:space-x-6">
+                <img class="block mx-auto h-24 rounded-full sm:mx-0 sm:flex-shrink-0"
+                    src="https://cdn.discordapp.com/avatars/338657065645899778/a_a3bb6f635e41776ded69897def9aa293.gif?size=128"
+                    alt="Emre">
+                <div class="text-center space-y-2 sm:text-left">
+                    <div class="space-y-0.5">
+                        <p class="text-lg text-white font-semibold">
+                            Emre
+                        </p>
+                        <p class="text-gray-500 font-medium">
+                            Developer
+                        </p>
+                    </div>
+                    <a href="https://discord.gg/8E6EsYpGWD">
+                        <button
+                            class="py-2 px-4 font-semibold rounded-lg shadow-md text-white bg-blue-500 hover:bg-blue-800">
+                            Discord
+                        </button>
+                    </a>
+                    <a href="https://www.codsup.tk/uptime">
+                        <button
+                            class="py-2 px-4 font-semibold rounded-lg shadow-md text-white bg-blue-500 hover:bg-blue-800">
+                            Uptime
+                        </button>
+                    </a>
+                </div>
+            </div>
+            <div
+                class="row-span-3  py-8 px-8 max-w-sm bg-gray-800 rounded-xl shadow-md space-y-2 sm:py-4 sm:flex sm:items-center sm:space-y-0 sm:space-x-6">
+                <div class="text-center space-y-2 sm:text-left">
+                    <div class="space-y-0.5">
+                        <p class="text-lg text-white font-semibold">
+                            Hakkımda
+                        </p>
+                        <p class="text-gray-500 font-medium">
+                        CodsUP Genel İçerik Paylaşılacağı Websitesi.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div
+                class="py-8 px-8 max-w-sm bg-gray-800 rounded-xl shadow-md space-y-2 sm:py-4 sm:flex sm:items-center sm:space-y-0 sm:space-x-6">
+                <img class="block mx-auto h-24 rounded-full sm:mx-0 sm:flex-shrink-0"
+                    src="https://cdn.discordapp.com/avatars/793095109712412692/62ce3231c4e0feeefc032d210b613b71.png?size=128"
+                    alt="Pusat">
+                <div class="text-center space-y-2 sm:text-left">
+                    <div class="space-y-0.5">
+                        <p class="text-lg text-white font-semibold">
+                            Pusat
+                        </p>
+                        <p class="text-gray-500 font-medium">
+                            Bot
+                        </p>
+                    </div>
+                    <a href="https://www.codsup.tk/pusatdavet">
+                        <button
+                            class="py-2 px-4 font-semibold rounded-lg shadow-md text-white bg-blue-500 hover:bg-blue-800">
+                            İnvite
+                        </button>
+                    </a>
+
+                    <a href="https://www.codsup.tk/yakinda">
+                        <button
+                            class="py-2 px-4 font-semibold rounded-lg shadow-md text-white bg-blue-500 hover:bg-blue-800">
+                            Vote
+                        </button>
+                    </a>
+
+                </div>
+            </div>
+            <div></div>
+
+            <div></div>
+                <div class="text-center space-y-2 sm:text-left">
+                    <div class="space-y-0.5">
+
+
+                </div>
+            </div>
+            <div
+                class=" row-start-3 row-end-3 py-8 px-8 max-w-sm bg-gray-800 rounded-xl shadow-md space-y-2 sm:py-4 sm:flex sm:items-center sm:space-y-0 sm:space-x-6">
+                    <a href="https://www.codsup.tk/uptime">
+                        <button
+                            class="cursor-not-allowed py-2 px-4 font-semibold rounded-lg shadow-md text-white bg-blue-500 hover:bg-blue-800">
+                            Link Kısalt
+                        </button>
+            </div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+
+        </div>
+
+        <div class="mobile">
+            <div
+                class="mx-auto row-span-1 py-8 px-8 max-w-sm bg-gray-800 rounded-xl shadow-md space-y-2 sm:py-4 sm:flex sm:items-center sm:space-y-0 sm:space-x-6">
+                <img class="block mx-auto h-24 rounded-full sm:mx-0 sm:flex-shrink-0"
+                    src="https://cdn.discordapp.com/avatars/338657065645899778/a_a3bb6f635e41776ded69897def9aa293.gif?size=128"
+                    alt="CodsUP">
+                <div class="text-center space-y-2 sm:text-left">
+                    <div class="space-y-0.5">
+                        <p class="text-lg text-white font-semibold">
+                            Emre
+                        </p>
+                        <p class="text-gray-500 font-medium">
+                            Developer
+                        </p>
+                    </div>
+                    <a href="https://discord.gg/8E6EsYpGWD">
+                        <button
+                            class="py-2 px-4 font-semibold rounded-lg shadow-md text-white bg-blue-500 hover:bg-blue-800">
+                            Discord
+                        </button>
+                    </a>
+                    <a href="https://www.codsup.tk/uptime">
+                        <button
+                            class="py-2 px-4 font-semibold rounded-lg shadow-md text-white bg-blue-500 hover:bg-blue-800">
+                            Uptime
+                        </button>
+                    </a>
+                </div>
+            </div>
+            <div class="space2"></div>
+
+            <div
+                class="mx-auto  py-8 px-8 max-w-sm bg-gray-800 rounded-xl shadow-md space-y-2 sm:py-4 sm:flex sm:items-center sm:space-y-0 sm:space-x-6">
+                <div class="text-center space-y-2 sm:text-left">
+                    <div class="space-y-0.5">
+                        <p class="text-lg text-white font-semibold">
+                            Hakkımda
+                        </p>
+                        <p class="text-gray-500 font-medium">
+                         CodsUP Genel İçerik Paylaşılacağı Websitesi.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="space2"></div>
+
+            <div
+                class="py-8 mx-auto px-8 max-w-sm bg-gray-800 rounded-xl shadow-md space-y-2 sm:py-4 sm:flex sm:items-center sm:space-y-0 sm:space-x-6">
+                <img class="block mx-auto h-24 rounded-full sm:mx-0 sm:flex-shrink-0"
+                    src="https://cdn.discordapp.com/avatars/793095109712412692/62ce3231c4e0feeefc032d210b613b71.png?size=128"
+                    alt="Pusat">
+                <div class="text-center space-y-2 sm:text-left">
+                    <div class="space-y-0.5">
+                        <p class="text-lg text-white font-semibold">
+                            Pusat
+                        </p>
+                        <p class="text-gray-500 font-medium">
+                            Bot
+                        </p>
+                    </div>
+                    <a href="https://www.codsup.tk/pusatdavet">
+                        <button
+                            class="py-2 px-4 font-semibold rounded-lg shadow-md text-white bg-blue-500 hover:bg-blue-800">
+                            İnvite
+                        </button>
+                    </a>
+
+                    <a href="https://www.codsup.tk/yakinda">
+                        <button
+                            class="py-2 px-4 font-semibold rounded-lg shadow-md text-white bg-blue-500 hover:bg-blue-800">
+                            Vote
+                        </button>
+                    </a>
+
+                </div>
+            </div>
+
+                </div>
+            </div>
+        
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
+        <div class="space"></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+    <script src="https://cdn.plyr.io/3.6.3/plyr.js"></script>
+    <script>
+        const player = new Plyr('#player');
+    </script>
+    <script>
+        const player2 = new Plyr('#player2');
+    </script>
+
+    <script>
+        function CommandPalette(items, options) {
+            const fuse = new Fuse(items, { threshold: 0.3, keys: ['name', 'category'] })
+            return {
+                isOpen: false,
+                open() {
+                    if (this.isOpen) {
+                        return
+                    }
+                    this.search = ''
+                    this.isOpen = true
+                    setTimeout(() => {
+                        this.$refs.search.focus()
+                    }, 100)
+                },
+                search: '',
+                filteredItems() {
+                    return fuse.search(this.search).map((item, i) => [item, i])
+                },
+                selectUp() {
+                    this.selected = Math.max(0, this.selected - 1)
+                    this.$nextTick(() => {
+                        this.$refs.results.children[this.selected + 1].scrollIntoView({
+                            block: 'nearest',
+                        })
+                    })
+                },
+                selectDown() {
+                    this.selected = Math.min(this.filteredItems().length - 1, this.selected + 1)
+                    this.$nextTick(() => {
+                        this.$refs.results.children[this.selected + 1].scrollIntoView({
+                            block: 'nearest',
+                        })
+                    })
+                },
+                go() {
+                    window.location = options.versionPrefix + this.filteredItems()[this.selected][0].item.url
+                },
+                selected: 0,
+            }
+        }
+    </script>
+    <script
+        src="https://cdn.jsdelivr.net/combine/npm/highlightjs@9.16.2/highlight.pack.min.js,npm/axios@0.19.2/dist/axios.min.js,npm/dlv@1.1.3/dist/dlv.umd.min.js,gh/alpinejs/alpine@v2.2.1/dist/alpine.js,npm/fuse.js@5.0.9-beta/dist/fuse.min.js"></script>
+    <script src="/js/app.js?id=d4197598bcc6f27e1a60"></script>
+    <script src="/js/prism.js?id=15deb4e2ec03d399dcb3"></script>
+</body>
+
+</html>
